@@ -20,7 +20,7 @@
       </script>
 </head>
 <body>
-	<jsp:include page="header_user.jsp"></jsp:include>
+	<jsp:include page="header_guest.jsp"></jsp:include>
     <div style="height: 220px; background-color: #D6DADC;">
         <br><br><br><p id="title-service">Hợp pháp</p>
         <div class="button-legal">

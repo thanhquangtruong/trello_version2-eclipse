@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="col-md-2 col-sm-2 col-xs-4 logo_header">
-                    <a href="index.jsp"><img src="image/guest/logo_blue.svg" style="background: none" alt="" width="100px" height="60px">
+                    <a href="index_user.jsp"><img src="image/guest/logo_blue.svg" style="background: none" alt="" width="100px" height="60px">
                     </a>
                 </div>
                 <ul class="nav navbar-nav navbar-right">
@@ -50,22 +50,22 @@
                                 <p id="user-name">thanhquang01(thanhquang101)</p>
                             </li>
                             <hr>
-                            <li><a class="user-item" href="card.html">Lý lịch</a>
+                            <li><a class="user-item" href="card.jsp">Lý lịch</a>
                             </li>
-                            <li><a class="user-item" href="#">Thẻ</a>
+                            <li><a class="user-item" href="card.jsp">Thẻ</a>
                             </li>
-                            <li><a class="user-item" href="#">Cài đặt</a>
+                            <li><a class="user-item" href="card.jsp">Cài đặt</a>
                             </li>
                             <hr>
                             <li><a class="user-item" href="#">Trợ giúp</a>
 
                             </li>
-                            <li><a class="user-item" href="Shortcuts.html">Phím tắt</a>
+                            <li><a class="user-item" href="shortcuts.jsp">Phím tắt</a>
                             </li>
                             <li><a class="user-item" href="#">Thay đổi ngôn ngữ</a>
                             </li>
                             <hr>
-                            <li><a class="user-item" href="index.html">Đăng xuất</a>
+                            <li><a class="user-item" href="LogOut.jsp">Đăng xuất</a>
                             </li>
                         </ul>
                     </li>
@@ -89,18 +89,18 @@
                             <h2 style="margin-top: 10px;text-align: center;font-size: 16px;"> Thông tin</h2>
                             <hr>
                             <div class="information-header">
-                                <a href="guide.html"><img id="img-tips-header" src="image/user/thongtin.jpg" alt="">
+                                <a href="guide.jsp"><img id="img-tips-header" src="image/user/thongtin.jpg" alt="">
                                 </a>
                                 <a href="guide.html" class="btn btn-upgrade_header" role="button">Bạn mới sử dụng Trello? Hãy xem <br>qua hướng dẫn</a>
                                 <a href="#" id="tips-header">Xem một mẹo mới</a>
                                 <hr>
                                 <div class="navbar-collapse collapse" id="menu">
                                     <ul class="nav navbar-nav">
-                                        <li><a class="tips-item-header" href="tour.html">Hướng dẫn</a>
+                                        <li><a class="tips-item-header" href="tour.jsp">Hướng dẫn</a>
                                         </li>
-                                        <li><a class="tips-item-header" href="Bieuphi.html">Biểu phí</a>
+                                        <li><a class="tips-item-header" href="pricing.jsp">Biểu phí</a>
                                         </li>
-                                        <li><a class="tips-item-header" href="application.html">Ứng dụng</a>
+                                        <li><a class="tips-item-header" href="platforms.jsp">Ứng dụng</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -108,9 +108,9 @@
                                     <ul class="nav navbar-nav tips-item-2-header">
                                         <li><a class="tips-item-header" href="#">Blog</a>
                                         </li>
-                                        <li><a class="tips-item-header" href="Footer-Header/Service.html">Pháp lý</a>
+                                        <li><a class="tips-item-header" href="Service.jsp">Pháp lý</a>
                                         </li>
-                                        <li><a class="tips-item-header" href="Footer-Header/history.html">Về chúng tôi</a>
+                                        <li><a class="tips-item-header" href="history.jsp">Về chúng tôi</a>
                                         </li>
                                     </ul>
                                 </div>

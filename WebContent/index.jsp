@@ -18,13 +18,13 @@
     <nav class="navbar-inverse" style="background-color: #3a476f;">
         <div class="container">
             <div class="col-md-2 col-sm-2 col-xs-4">
-                <a href="#"><img src="image/guest/logo_blue.svg" style="background: none" alt="" width="100px" height="60px">
+                <a href="index.jsp"><img src="image/guest/logo_blue.svg" style="background: none" alt="" width="100px" height="60px">
                 </a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="signup.jsp"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                <li><a href="SignUp.jsp"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
                 </li>
-                <li><a href="login.jsp"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                <li><a href="Login.jsp"><span class="glyphicon glyphicon-log-in"></span> Login</a>
                 </li>
             </ul>
         </div>
@@ -37,7 +37,7 @@
             Bỏ đi những email dài dòng, bảng tính đã cũ, ghi chú sắp hết thời gian hiện, và phần mềm ít sử dụng để quản lý các dự án của bạn. Trello giúp bạn quan sát nhanh mọi thứ về dự án của bạn
         </p>
         <div style="text-align: center;margin-bottom: 20px;">
-            <a href="signup.jsp" class="btn btn-signup">Đăng ký miễn phí</a>
+            <a href="SignUp.jsp" class="btn btn-signup">Đăng ký miễn phí</a>
         </div>
     </div>
     <div style="background: blue;">
@@ -155,7 +155,7 @@
                 <strong>Bạn bị rối bời trong các bản ghi chú, bảng tính, email và những phần mềm phiền toái</strong> cho việc quản lý dự án, và trở thành một trong hàng triệu người yêu thích Trello. Bạn có thể thêm bao nhiêu bảng mà bạn và mọi người muốn thêm với tài khoản miễn phí của Trello.
             </p>
             <div style="text-align: center;margin-bottom: 20px;">
-                <a href="signup.jsp" class="btn btn-signup">Đăng ký tài khoản mới</a>
+                <a href="SignUp.jsp" class="btn btn-signup">Đăng ký tài khoản mới</a>
             </div>
         </div>
     </div>

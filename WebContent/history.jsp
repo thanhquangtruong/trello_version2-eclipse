@@ -23,7 +23,7 @@
 			    <div class="btn-group">
 				  <a href="history.jsp" type="button" class="btn btn-primary btn-service">Lịch sử và truyền thông</a>
 				  <a href="Trademark.jsp" type="button" class="btn btn-primary btn-service">Thương hiệu</a>
-				  <a href="run-security.jsp" type="button" class="btn btn-primary btn-service">Hoạt động và an ninh</a>
+				  <a href="Security.jsp" type="button" class="btn btn-primary btn-service">Hoạt động và an ninh</a>
 				</div>
 			</div>
 		</div>
@@ -106,7 +106,7 @@
             	<a href="#" type="button"><img src="image/footer/wired.jpg" alt="" style="height: 54px;">
             	</a>
         	</div>
-            <div class="a>
+            <div class="a">
             	<a href="#" type="button"><img src="image/footer/wsj.jpg" alt="" style="height: 54px;">
             	</a>
         	</div>

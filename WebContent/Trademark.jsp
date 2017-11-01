@@ -9,19 +9,21 @@
     <script src ="bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/legal.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
 <nav class="navbar-inverse" style="background-color: #3a476f;">
         <div class="container">
             <div class="col-md-2 col-sm-2 col-xs-4">
-                <a href="#"><img src="image/guest/logo_blue.svg" style="background: none" alt="" width="100px" height="60px">
+                <a href="index.jsp"><img src="image/guest/logo_blue.svg" style="background: none" alt="" width="100px" height="60px">
                 </a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                <li><a href="SignUp.jsp"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
                 </li>
-                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                <li><a href="Login.jsp"><span class="glyphicon glyphicon-log-in"></span> Login</a>
                 </li>
             </ul>
         </div>
@@ -71,5 +73,6 @@
 			</div>
 		</div>
 	</div>
+	<jsp:include page="footer.jsp"></jsp:include>
 </body>
 </html>

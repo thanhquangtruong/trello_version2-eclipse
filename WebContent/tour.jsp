@@ -13,18 +13,17 @@
     <link rel="stylesheet" href="css/footer.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-
 <body>
     <nav class="navbar-inverse" style="background-color: #f8f9f9;">
         <div class="container">
             <div class="col-md-2 col-sm-2 col-xs-4">
-                <a href="#"><img src="image/guest/logo_blue.svg" style="background: none" alt="" width="100px" height="60px">
+                <a href="index.jsp"><img src="image/guest/logo_blue.svg" style="background: none" alt="" width="100px" height="60px">
                 </a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="Login/SignUp.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                <li><a href="SignUp.jsp"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
                 </li>
-                <li><a href="Login/Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                <li><a href="Login.jsp"><span class="glyphicon glyphicon-log-in"></span> Login</a>
                 </li>
             </ul>
         </div>
@@ -123,7 +122,7 @@
                     <img id ="tour-member" src="image/guest/home-devices.jpg" alt="">
                 </div>
                 <div class="col-md-7">
-                    <p id="txt-tour-3"><Strong>Trello hoạt động ở bất cứ nơi đâu bạn ở.</Strong> Chúng tôi có ứng dụng cho iPhone, iPad, điện thoại, máy tính bảng Android, đồng hồ, và máy tính bảng Kindle Fire. Trello cũng hoạt động trên web ở bất cứ kích thước màn hình nào. <a href="index_application.html">Tải ứng dụng.</a></p>
+                    <p id="txt-tour-3"><Strong>Trello hoạt động ở bất cứ nơi đâu bạn ở.</Strong> Chúng tôi có ứng dụng cho iPhone, iPad, điện thoại, máy tính bảng Android, đồng hồ, và máy tính bảng Kindle Fire. Trello cũng hoạt động trên web ở bất cứ kích thước màn hình nào. <a href="platforms.jsp">Tải ứng dụng.</a></p>
                 </div>               
             </div>
         </div>
@@ -181,7 +180,7 @@
             <div class="container">
                 <div class="row">
                      <div class="col-md-7">
-                        <p id="txt-tour-12">Nếu bạn muốn thể hiện sự hỗ trợ của bạn và nhận về thêm một chút vui vẻ và chức năng, <strong>Trello Gold</strong> là để dành cho bạn. Với Trello Gold, bạn sẽ nhận ba Phần mở rộng cho mỗi bảng thay vì chỉ có một. Có thêm phông nền và nhãn dãn cho bảng cộng với khả năng tải lên ảnh của riêng bạn. Bạn còn có thể tuỳ chỉnh biểu tượng cảm xúc và tải lên tệp đính kèm lớn hơn. Và bạn có thể nhận miễn phí Trello Gold bằng việc mời mọi người tham gia Trello.<a href="#">Tìm hiểu thêm về Trello Gold.</a></p>
+                        <p id="txt-tour-12">Nếu bạn muốn thể hiện sự hỗ trợ của bạn và nhận về thêm một chút vui vẻ và chức năng, <strong>Trello Gold</strong> là để dành cho bạn. Với Trello Gold, bạn sẽ nhận ba Phần mở rộng cho mỗi bảng thay vì chỉ có một. Có thêm phông nền và nhãn dãn cho bảng cộng với khả năng tải lên ảnh của riêng bạn. Bạn còn có thể tuỳ chỉnh biểu tượng cảm xúc và tải lên tệp đính kèm lớn hơn. Và bạn có thể nhận miễn phí Trello Gold bằng việc mời mọi người tham gia Trello.<a href="trello-gold.jsp">Tìm hiểu thêm về Trello Gold.</a></p>
                     </div>
                     <div class="col-md-5">
                         <img src="image/tour/trello-gold.svg" alt="" style="height: 50%;width: 50%; margin-top: -260px;margin-left: 100px">
@@ -195,7 +194,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-7">
-                     <p id="txt-tour-11" style="color: white">Khiến cho Trello trở nên mạnh mẽ hơn cho công việc của bạn với <strong>Trello Business Class!</strong> Các tính năng bao gồm Power-Up cho phép kết nối Trello với các dịch vụ như Salesforce, Slack, GitHub, Evernote, và Google Drive, đây chỉ là vài cái tên thôi. Nhận quyển kiểm soát hành chính, các tính năng bảo mật nâng cao, khả năng sắp xếp và lọc bảng, và tất cả những lợi ích vui vẻ từ Trello Gold. Tìm hiểu thêm về <a herf="#"> Business Class.</a></p>
+                     <p id="txt-tour-11" style="color: white">Khiến cho Trello trở nên mạnh mẽ hơn cho công việc của bạn với <strong>Trello Business Class!</strong> Các tính năng bao gồm Power-Up cho phép kết nối Trello với các dịch vụ như Salesforce, Slack, GitHub, Evernote, và Google Drive, đây chỉ là vài cái tên thôi. Nhận quyển kiểm soát hành chính, các tính năng bảo mật nâng cao, khả năng sắp xếp và lọc bảng, và tất cả những lợi ích vui vẻ từ Trello Gold. Tìm hiểu thêm về <a href="business_class.jsp"> Business Class.</a></p>
                     </div>  
                     <div class="col-md-5">
                         <img id="img-tour-business" src="image/tour/logo-white.svg" alt="">

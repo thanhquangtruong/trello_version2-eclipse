@@ -15,7 +15,7 @@
 
 </head>
 <body>
-	<jsp:include page="header_user.jsp"></jsp:include>
+	<jsp:include page="header_guest.jsp"></jsp:include>
     <div style="height: 300px; background-color: #0079bf;">
         <br><br><br><p id="title-service-3">Về Trello</p><br>
         <p id="title-service-5">Đằng sau bảng kệ</p>

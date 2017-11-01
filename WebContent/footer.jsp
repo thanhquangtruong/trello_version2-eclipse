@@ -39,8 +39,8 @@
                             <li><a href="tour.jsp">Tham quan</a></li>
                             <li><a href="pricing.jsp">Biểu phí</a></li>
                             <li><a href="platforms.jsp">Ứng dụng</a></li>
-                            <li><a href="legal/history.jsp">Về chúng tôi</a></li>
-                            <li><a href="legal/service.jsp">Pháp lý</a></li>
+                            <li><a href="history.jsp">Về chúng tôi</a></li>
+                            <li><a href="Service.jsp">Pháp lý</a></li>
                     </ul> 
                     </div>
                 </div>

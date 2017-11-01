@@ -10,18 +10,24 @@
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/footer.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript">
+         
+            function signup() {
+               window.location="SignUp.jsp";
+            }
+      </script>
 </head>
 <body>
 	<nav class="navbar-inverse" style="background-color: #f8f9f9;">
         <div class="container">
             <div class="col-md-2 col-sm-2 col-xs-4">
-                <a href="#"><img src="image/guest/logo_blue.svg" style="background: none" alt="" width="100px" height="60px">
+                <a href="index.jsp"><img src="image/guest/logo_blue.svg" style="background: none" alt="" width="100px" height="60px">
                 </a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="Login/SignUp.html"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                <li><a href="SignUp.jsp"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
                 </li>
-                <li><a href="Login/Login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                <li><a href="Login.jsp"><span class="glyphicon glyphicon-log-in"></span> Login</a>
                 </li>
             </ul>
         </div>
@@ -32,7 +38,7 @@
 	        <p id="txt-pricing">Được tin tưởng bởi hàng triệu nhóm Trello xuất sắc trên khắp thế giới.</p> 
 			<p id="txt-pricing">Tìm hiểu lựa chọn nào phù hợp cho bạn.</p>
 	        <div style="text-align: center;margin-bottom: 20px;margin-top: 30px;">
-	            <a href="#" style="font-size: 22px;">Đăng ký miễn phí!</a>
+	            <a href="SignUp.jsp" style="font-size: 22px;">Đăng ký miễn phí!</a>
 	        </div>
    		</div><br>
    		<div class="content">
@@ -44,7 +50,7 @@
 						<h1 style="margin-top: 40px;">$0</h1>
 						<h4> Miễn phí và mãi mãi</h4>
 						<div style="text-align: center;margin-bottom: 20px;margin-top: 30px;">
-				            <button class="btn btn-signup">Đăng ký</button>
+				            <button class="btn btn-signup" onclick="signup();">Đăng ký</button>
 				        </div>
 					</div>
 					<div  style="border: 0.5px solid #D6DADC"><br><br>

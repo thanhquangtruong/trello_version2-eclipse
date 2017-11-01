@@ -12,21 +12,26 @@
     <link rel="stylesheet" href="css/style.css"/>
      <link rel="stylesheet" href="css/footer.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="text/javascript">
+            function gototable() {
+               window.location="table_user.jsp";
+            }
+      </script>
 </head>
 <body>
 	<nav class="navbar-inverse-1" style="background-color: #0c3953;">
         <div class="container">
             <div class="col-md-2 col-sm-2 col-xs-4">
-                <a href="#" id="logo-guide"><img class="img-logo" src="image/header/logo_blue.svg">
+                <a href="index_user.jsp" id="logo-guide"><img class="img-logo" src="image/header/logo_blue.svg">
                 </a>
             </div>
             <ul class="nav navbar-nav navbar-right">
-                 <button class="btn btn-table" style="margin-top: 10px;" onclick="Redirect();">Đến bảng của bạn</button>
+                 <button class="btn btn-table" style="margin-top: 10px;" onclick="gototable();">Đến bảng của bạn</button>
             </ul>
         </div>
     </nav>
-    <div style="background: #0079bf;height: 400px;">
-        <div class="tour-2">
+    <div style="background: #0079bf;height: 300px;">
+        <div class="">
             <p id="guide-title"><br><br>Làm Quen Với Trello</p>
             <p id="guide-description">Học cách sử dụng Trello cơ bản để biến tất cả giấc mơ quản lý của bạn thành sự thật.</p>
         </div>
@@ -36,37 +41,37 @@
 			<p id="guide-theme">Chúng tôi sẽ cho bạn thấy làm việc với Trello rất dễ dàng. <strong>Hãy chọn một chủ đề dưới đây</strong> hoặc kéo xuống nữa để xem thêm một vài ý tưởng tuyệt vời khác.</p>
 			<div class="row" style="text-align: center;">
 				<div class="col-md-4">
-					<button class="btn btn-default" onclick=""><img id="img-guide-item" src="image/guide/lamquen.jpg" alt=""></button>
+					<button class="btn btn-default" onclick=""><img id="img-guide-item" src="image/guide/lamquen.JPG" alt=""></button>
 				</div>
 				<div class="col-md-4">
-					<button class="btn btn-default" onclick=""><img id="img-guide-item" src="image/guide/table.jpg" alt=""></button>
+					<button class="btn btn-default" onclick=""><img id="img-guide-item" src="image/guide/table.JPG" alt=""></button>
 				</div>
 				<div class="col-md-4">
-					<button class="btn btn-default" onclick=""><img id="img-guide-item" src="image/guide/hoptac.jpg" alt=""></button>
+					<button class="btn btn-default" onclick=""><img id="img-guide-item" src="image/guide/Hoptac.JPG" alt=""></button>
 				</div>
 			</div>
 			<div class="row" style="text-align: center; margin-top: 30px;">
 				<div class="col-md-4">
-					<button class="btn btn-default" onclick=""><img id="img-guide-item" src="image/guide/morong.jpg" alt=""></button>
+					<button class="btn btn-default" onclick=""><img id="img-guide-item" src="image/guide/morong.JPG" alt=""></button>
 				</div>
 				<div class="col-md-4">
-					<button class="btn btn-default" onclick=""><img id="img-guide-item" src="image/guide/quantri.jpg" alt=""></button>
+					<button class="btn btn-default" onclick=""><img id="img-guide-item" src="image/guide/quantri.JPG" alt=""></button>
 				</div>
 				<div class="col-md-4">
-					<button class="btn btn-default" onclick=""><img id="img-guide-item" src="image/guide/cacmeo.jpg" alt=""></button>
+					<button class="btn btn-default" onclick=""><img id="img-guide-item" src="image/guide/cacmeo.JPG" alt=""></button>
 				</div>
 			</div>
 		</div>
     </div>
    	<div style="background: #0079bf;height: 500px;margin-top: 40px;">
-        <div class="tour-2" style="text-align: center;">
+        <div class="" style="text-align: center;">
         	<img id="img-world" src="image/guide/world.jpg" alt="">
             <p id="guide-title">Một số ý tưởng tuyệt vời khác của Trello</p>
             <p id="guide-description">Mọi người sử dụng Trello cho bất kỳ công việc nào mà họ nghĩ ra. Hãy xem thử một số ví dụ về cách mọi người sử dụng Trello để quản lý công việc của mình.</p>
         </div>
     </div>
     <div style="background: #42548e;height: 900px;">
-        <div class="tour-2" style="text-align: center;">
+        <div class="" style="text-align: center;">
         	<img id="img-world" src="image/guide/work.jpg" alt="">
             <p id="guide-title">Trello tại nơi làm việc</p>
             <p id="guide-description">Hàng nghìn doanh nghiệp sử dụng Trello mỗi ngày.<strong>
@@ -83,7 +88,7 @@
 				</div>
 	        </div>
 	        
-	        <p id="guide-description" >Business Class giúp bạn nâng cao hiệu suất làm việc của nhóm và nhận thêm các tính năng quản trị mà bạn cần. Tìm hiểu về <a href="Business_Class.html">Business Class.</a></p>
+	        <p id="guide-description" >Business Class giúp bạn nâng cao hiệu suất làm việc của nhóm và nhận thêm các tính năng quản trị mà bạn cần. Tìm hiểu về <a href="business_class.jsp">Business Class.</a></p>
         </div>      
 
     </div>
