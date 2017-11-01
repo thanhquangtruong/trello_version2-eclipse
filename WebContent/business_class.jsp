@@ -1,0 +1,154 @@
+<%@page contentType="text/html" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Xem tất cả các ứng dụng của Trello</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <script src="javascript/jquery.min.js"></script>
+     <script src = "bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css"/>
+</head>
+<body>
+	<nav class="navbar-inverse" style="background-color: #3a476f;">
+        <div class="container">
+            <div class="col-md-2 col-sm-2 col-xs-4">
+                <a href="#"><img src="image/guest/logo_blue.svg" style="background: none" alt="" width="100px" height="60px">
+                </a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a>
+                </li>
+                <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="background-api" style="height: 650px;background-image: url('image/businsess/business-class.jpg');background-color:#42548e">    
+        <div class="image_index_business">
+            <img id="img-business" src="image/guest/logo_white.svg" alt="">
+        </div>
+            <p id="txt-business-1"><strong>Làm việc với tầm nhìn chiến lược.</strong></p>
+            <p id="txt-business-2">Trello Business Class là một không gian rộng mở dành cho các nhóm để cộng tác, giao tiếp và chia sẻ thông tin một cách an toàn.</strong></p>
+            <div class="buton" style="text-align: center; margin-top: 20px;; margin-bottom: 40px">
+                <button type="button" class="btn btn-upgrade">Nâng cấp nhóm của tôi</button>
+            </div>
+            <p id="txt-business-2"><strong><a href=#"" style="text-decoration: underline; color: white;">Chỉ $9.99 cho một người dùng / tháng</a></p></strong>
+            <p id="txt-business">khi trả theo hằng năm</p>
+    </div>
+    <div style="height: 750px;background-color:#3a476f">
+        <div class="container">       
+            <div class="row" style="text-align: center;">
+    			<div class="col-md-4">
+    				<div class="txt-business-3">
+    					<p id="txt-business-3">Một nền tảng trung tâm</p>
+    				</div>
+    				<div class="img-business-2">
+    					<img id="img-business-2" src="image/businsess/feature-integration.jpg" alt="">
+    				</div>
+    				<div class="txt-business-4">
+    					<p id="txt-business-4">Tích hợp các những công cụ mà bạn yêu thích vào quy trình làm việc của bạn trên Trello để dễ dàng có được tầm nhìn chiến lược cho mọi dự án mà không cần phải rời khỏi Trello.</p>
+    				</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="txt-business-3">
+    					<p id="txt-business-3">Một tầm nhìn tập trung</p>
+    				</div>
+    				<div class="img-business-2">
+    					<img id="img-business-2" src="image/businsess/feature-roadmap.jpg" alt="">
+    				</div>
+    				<div class="txt-business-4">
+    					<p id="txt-business-4">Cập nhật các bảng và dự án quan trọng nhất đối với nhóm của bạn.</p>
+    				</div>
+    			</div>
+    			<div class="col-md-4">
+    				<div class="txt-business-3">
+    					<p id="txt-business-3">Một không gian an toàn</p>
+    				</div>
+    				<div class="img-business-2">
+    					<img id="img-business-2" src="image/businsess/feature-overview.jpg" alt="">
+    				</div>
+    				<div class="txt-business-4">
+    					<p id="txt-business-4">Bảo mật nhóm của bạn với những tính năng quản trị mạnh.</p>
+    				</div>
+    			</div>
+            </div>
+        </div>
+        <hr width="800px" align="center" size="30px"/>
+		<div class="email">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <img id="img-mail-business" src="image/businsess/mail.jpg" alt="">
+                    </div>
+                    <div class="col-md-8">
+                        <p id="txt-business-5">Nhanh chóng có được câu trả lời cho mọi câu hỏi với hỗ trợ email ưu tiên.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="background: #838fb5; height: 700px">
+        <div class="body-5"><br><br><br>
+            <p id="txt-business-6">Trello Business Class đang hỗ trợ cho những công ty lớn như:</p>
+            <div class="row" style="margin-left: 200px;margin-right: 40px">
+                <div class="col-md-2">
+                    <img src="image/guest/redhat.svg" alt="" style="height: 54px">
+                </div>
+                <div class="col-md-2">
+                    <img src="image/guest/fender.svg" alt="" style="height: 54px">
+                </div>
+                <div class="col-md-1">
+                    <img src="image/guest/adobe.svg" alt="" style="height: 54px">
+                </div>
+                <div class="col-md-1" style="margin-left: 40px">
+                    <img src="image/guest/pixar.svg" alt="" style="height: 54px ;">
+                </div>
+                <div class="col-md-1" style="margin-left: 50px">
+                    <img src="image/guest/google.svg" alt="" style="height: 54px">
+                </div>
+                <div class="col-md-1" style="margin-left: 50px">
+                    <img src="image/guest/govuk.svg" alt="" style="height: 54px">
+                </div>
+            </div>
+        </div>
+        <div class="row" style="margin-left: 260px;margin-right: 40px;margin-top: 40px">
+            <div class="col-md-3">
+                <img src="image/guest/kickstarter.svg" alt="" style="height: 54px">
+            </div>
+            <div class="col-md-3">
+                <img src="image/guest/britishredcross.svg" alt="" style="height: 54px">
+            </div>
+            <div class="col-md-3">
+                <img src="image/guest/natgeo.svg" alt="" style="height: 54px">
+            </div>
+        </div>
+        <p id="txt-business-7">Nhấp vào các công ty tuyệt vời bên dưới để xem cách họ áp dụng Trello như một phần quan trọng trong quy trình làm việc của họ như thế nào.</p>
+        <div class="row-business">
+            <div class="col-md-3">
+                <a href="#"><img id="img-business-3" src="image/businsess/business-class-burgerfi.jpg" alt=""></a>
+            </div>
+            <div class="col-md-3">
+                <a href="#"><img id="img-business-3" src="image/businsess/business-class-deutschebahn.jpg" alt=""></a>
+            </div>
+            <div class="col-md-3">
+                <a href="#"><img id="img-business-3" src="image/businsess/business-class-mccorvey.jpg" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="background-business">
+        <br><br>     
+        <p id="txt-business-1"><strong>Bạn đã sẵn sàng để hoàn thành nhiều việc hơn chưa?</strong></p>
+        <p id="txt-business-2">Đưa hiệu suất làm việc của nhóm bạn lên một mức mới với Business Class.</p>
+        <p id="txt-business-2">Chỉ với <strong><a href=#"" style="text-decoration: underline; color: white;">$9.99 cho một người dùng / tháng.</a></strong></p>
+        <p id="txt-business">khi trả theo hằng năm</p>
+        <div class="buton" style="text-align: center; margin-top: 20px;; margin-bottom: 40px">
+            <button type="button" class="btn btn-upgrade">Nâng cấp nhóm của tôi</button>
+        </div>
+        <p id="txt-business-6">Có thêm câu hỏi?</p>
+        <p id="txt-business-6"><a href="#" style="text-decoration: underline; color: white;">Nói chuyện với Kinh doanh về Hạng Business </a></p>
+        <p id="txt-business-6">Nhiều hơn 100 người ư? <a href="#" style="text-decoration: underline; color: white;">Hãy xem qua chế độ Doanh nghiệp!</a></p>
+    </div>
+</body>
+</html>
