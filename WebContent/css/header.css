@@ -127,3 +127,42 @@ li a.tips-item-header{
 ul .tips-item-2-header{
     margin-left: 20px;
 }
+.modal-sm{
+	width: 400px;
+}
+.btn-private-share{
+	background-color: #FDFAE5;
+	width: 380px;
+	font-size: 14px;
+	margin-bottom: 5px;
+	text-align: left;
+	border: 0.5px solid #FDFAE5;
+}.btn-private-share:hover{
+	background-color: #D6DADC;
+}
+p#txt_created-table{
+	margin-left: 15px;
+	font-size: 16px;
+}
+a#txt-help{
+	color: black;
+	text-decoration: underline;
+}
+p#title_help{
+	font-weight: bold;
+	font-size: 20px;
+}
+.modal-language{
+	width: 400px;
+}
+button#language{
+	font-weight: bold;
+	text-align: left;
+	font-size: 17px;
+	width: 380px;
+	background-color: white;
+	border:0px solid white;
+}
+button#language:hover{
+	background-color: #D6DADC;
+}

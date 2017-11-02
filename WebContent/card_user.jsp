@@ -1,5 +1,5 @@
-<%@page contentType="text/html" pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
+    <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 
 <head>
@@ -10,151 +10,17 @@
     <script src="bootstrap/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/style.css" />
-
+	 <link rel="stylesheet" href="css/footer.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script>
+        function showPage1() {
+          document.getElementById("myDiv1").style.display = "block";
+        }
+    </script>
 </head>
 
 <body>
-    <nav class="navbar-inverse" style="background-color: #026AA7; height: 50px;">
-            <div class="container">
-                <div class="col-md-1 header_user_table">
-                    <button class="btn btn-primary" type="button" data-toggle="dropdown" style="height: 35px; font-weight: bold;font-size: 18px">Bảng<span class="caret"></span>
-                    </button>
-                    <ul class="dropdown-menu notify_header_user" style="margin-top: 10px;">
-                        <div class="header-search" id="search">
-                            <input type="text" class="form-control" placeholder="Tìm theo bảng tên..." name="search">
-                        </div>
-                        <div class="btn-table-card_header">
-                            <label id="table-recently"><span class=" glyphicon glyphicon-time"></span>&nbsp;Các bảng gần đây</label>
-                            <button type="button" class="btn btn-default btn-table-header" style="float: right"><span>+</span>
-                            </button>
-                        </div>
-                        <div class="btn-table-card_header">
-                            <label id="table-recently"><span class="glyphicon glyphicon-equalizer"></span>&nbsp;Bảng cá nhân</label>
-                            <button type="button" class="btn btn-default btn-table-header" style="float: right"><span>-</span>
-                            </button>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-2" style="margin-left: 25px;height: 35px;background-color: #4BBF6B"></div>
-                            <div class="col-md-8" style="margin-top:5px;">
-                                <a href="#" class="big-card_header"><span style="font-weight: bold; ">Bảng chào mừng</span></a>
-                            </div>
-                        </div>
-                        <br>
-                        <a href="#" class="big-table_header">Tạo bảng mới...</a>
-                        <a href="#" class="big-table_header">Luôn mở bảng chọn này...</a>
-                        <a href="#" class="big-table_header">Xem bảng chọn này...</a>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-4" style="margin-top: 6px;margin-left: -300px;">
-                    <div class="header-search">
-                        <input type="text" class="form-control" placeholder="Tìm theo bảng tên..." name="search">
-                    </div>
-                </div>
-                <div class="col-md-2 col-sm-2 col-xs-4 logo_header">
-                    <a href="#"><img src="image/guest/logo_blue.svg" style="background: none" alt="" width="100px" height="60px">
-                    </a>
-                </div>
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="navbar-right dropdown">
-                        <button class="btn btn-primary glyphicon glyphicon-user" type="button" data-toggle="dropdown"><span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" style="margin-top: 10px;width: 250px;">
-                            <li>
-                                <p id="user-name">thanhquang01(thanhquang101)</p>
-                            </li>
-                            <hr>
-                            <li><a class="user-item" href="card.html">Lý lịch</a>
-                            </li>
-                            <li><a class="user-item" href="#">Thẻ</a>
-                            </li>
-                            <li><a class="user-item" href="#">Cài đặt</a>
-                            </li>
-                            <hr>
-                            <li><a class="user-item" href="#">Trợ giúp</a>
-
-                            </li>
-                            <li><a class="user-item" href="Shortcuts.html">Phím tắt</a>
-                            </li>
-                            <li><a class="user-item" href="#">Thay đổi ngôn ngữ</a>
-                            </li>
-                            <hr>
-                            <li><a class="user-item" href="index.html">Đăng xuất</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="navbar-right dropdown">
-                        <button class="btn btn-primary glyphicon glyphicon-bell" type="button" data-toggle="dropdown"><span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu notify_header_user" style="margin-top: 10px;">
-                            <p style="text-align: center;font-size: 20px;">Thông báo</p>
-                            <hr>
-                            <li id="notify-item">Hiện tại chưa có thông báo nào</li>
-                            <hr>
-                            <button class="btn view-notify-header">Xem tất cả các thông báo</button>
-                            <button class="btn view-notify-header">Thay đổi tần suất thông báo qua Email</button>
-                            <button class="btn view-notify-header">Cho phép thông báo trên Desktop</button>
-                        </ul>
-                    </li>
-                    <li class="navbar-right dropdown">
-                        <button class="btn btn-primary glyphicon glyphicon-info-sign" type="button" data-toggle="dropdown"><span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" style="margin-top: 10px;width: 300px;">
-                            <h2 style="margin-top: 10px;text-align: center;font-size: 16px;"> Thông tin</h2>
-                            <hr>
-                            <div class="information-header">
-                                <a href="guide.html"><img id="img-tips-header" src="image/user/thongtin.jpg" alt="">
-                                </a>
-                                <a href="guide.html" class="btn btn-upgrade_header" role="button">Bạn mới sử dụng Trello? Hãy xem <br>qua hướng dẫn</a>
-                                <a href="#" id="tips-header">Xem một mẹo mới</a>
-                                <hr>
-                                <div class="navbar-collapse collapse" id="menu">
-                                    <ul class="nav navbar-nav">
-                                        <li><a class="tips-item-header" href="tour.html">Hướng dẫn</a>
-                                        </li>
-                                        <li><a class="tips-item-header" href="Bieuphi.html">Biểu phí</a>
-                                        </li>
-                                        <li><a class="tips-item-header" href="application.html">Ứng dụng</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="navbar-collapse collapse" id="menu-1">
-                                    <ul class="nav navbar-nav tips-item-2-header">
-                                        <li><a class="tips-item-header" href="#">Blog</a>
-                                        </li>
-                                        <li><a class="tips-item-header" href="Footer-Header/Service.html">Pháp lý</a>
-                                        </li>
-                                        <li><a class="tips-item-header" href="Footer-Header/history.html">Về chúng tôi</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </ul>
-                    </li>
-                    <li class="navbar-right dropdown">
-                        <button class="btn btn-primary glyphicon glyphicon-plus" type="button" data-toggle="dropdown"><span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" style="margin-top: 10px;width: 300px;">
-                            <h2 style="margin-top: 10px;text-align: center;font-size: 16px;"> Tạo mới</h2>
-                            <hr>
-                            <div class="collapse navbar-collapse" id="myNavbar">
-                                <ul class="nav navbar-nav ">
-                                    <li>
-                                        <a class="create-table" href="#openModal" data-toggle="modal" data-target="#openModal"><strong>Tạo Bảng... </strong>
-                                            <br><span class="sub-name">Một bảng được tạo thành từ các thẻ được sắp xếp trong danh sách. Sử dụng bảng để quản lý các dự án, theo dõi thông tin, hoặc tổ chức bất cứ việc gì.</span></a>
-                                    </li>
-                                    <hr>
-                                    <li><a class="create-team" href="#"><strong>Tạo Nhóm...</strong><br>
-                                        <span class="sub-name">Một nhóm là tập hợp các bảng và mọi người. Sử dụng nhóm để tổ chức công ty của bạn, hỗ trợ người bận rộn, gia đình hoặc bạn bè.</span></a>
-                                    </li>
-                                    <li><a class="create-table-business" href="#"><strong>Tạo Nhóm Business...</strong><br><span class="sub-name">Với Business Class nhóm của bạn có nhiều kiểm soát an ninh, hành chính hơn và Power-Up không giới hạn.</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
-        </nav>
+    <jsp:include page="header_user.jsp"></jsp:include>
     <div class="body-card" style="height: 200px; background-color: #EDEFF0;">
         <br>
         <div class="container">
@@ -202,7 +68,32 @@
                         </div>
                         <div class="col-md-3 list-member-3">
                             <div style="background-color: #D6DADC; margin-top: 30px;text-align: center;">
-                                <a href="#" class="btn create-table-new" type="button">Tạo bảng mới</a>
+                                
+	                           <div>
+	                          		<a href="#" class="btn create-table-new" type="button" id="created_tables">Tạo bảng mới</a>
+	                          		<div id="divContentAddTable" style="display:none;">
+		                                <div class="form-group" style="margin-left: 15px;margin-right: 15px;">
+			                                <label id="addemail">Tiêu đề</label>
+			                                <input name="name" type ="text" class="form-control" placeholder="Bạn đang lên kế hoạch cho điều gì?" style="background-color: #D6DADC">
+			                            </div>
+			                            <div class="form-group" style="margin-left: 15px;margin-right: 15px;">
+			                                <label for="sel1" style="font-size: 16px;">Nhóm</label>
+			                                <select class="form-control" id="sel1">
+			                                    <option>Không có </option>
+			                                </select>                      
+			                            </div>
+			                            <p id="txt_created-table">Bảng đang <strong>hiện với nhóm.</strong><a href="#" onclick="showPage1();">Thay đổi</a></p>
+			                            <div style="display:none;" id="myDiv1" class="animate-bottom">
+			                                <button class="btn-private-share"><span class="fa fa-lock">&nbsp;</span><strong>Riêng tư</strong><br>
+			                                Đây là bảng riêng tư. Chỉ có những người được thêm vào bảng có thể xem và chỉnh sửa bảng</button>
+			                                <button class="btn-private-share"><span class="fa fa-group">&nbsp;</span><strong>Nhóm</strong><br>
+			                                Mọi thành viên trong nhóm đều có thể xem bảng này. Chỉ những người được thêm vào bảng có thể chỉnh sửa bảng.</button>
+			                                <button class="btn-private-share"><span class="fa fa-globe">&nbsp;</span><strong>Công khai</strong>
+			                                Đây là bảng công khai. Bất kỳ ai có liên kết tới bảng này đều có thể xem bảng. Bảng có thể được tìm thấy trên các công cụ tìm kiếm như Google. Chỉ những người được thêm vào bảng có quyền chỉnh sửa bảng</button>
+			                            </div>
+	                            		<button type="button" class="btn btn-default btn-add-email-card">Thêm</button>
+                               		 </div>
+                               	</div>
                             </div>
                         </div>
                     </div>
@@ -217,162 +108,209 @@
                                 <input type="text" name="team" placeholder="Tìm thành viên theo tên" class="form-control" style="background-color: #D6DADC; margin-bottom: 20px;">
                                 <p id="setting-card-member">Thêm thành viên</p>
                                 <hr>
-                                <button type="button" class="btn btn-default btn-add-email-card"><span class="glyphicon glyphicon-user "></span>&nbsp;Thêm vào theo tên hoặc Email</button>
-								<button type="button " class="btn btn-default " style="margin-top: 20px;background-color: #D6DADC "><span class="glyphicon glyphicon-user "></span>&nbsp;Thêm vào hàng loạt các thành viên</button>
-								<div style="background-color: #D6DADC; margin-top: 30px;text-align: center; ">
-									<button type="button " class="close " data-dismiss="modal " aria-hidden="true ">×</button>
-									<img src="image/card/lock.svg " alt=" " style="margin-top: 30px; ">
-									<p id="setting-lock "><strong>Cần thêm an ninh để kiểm soát?</strong></p>
-									<p id="setting-lock-item ">Hủy kích hoạt các thành viên cũ của nhóm và bảo vệ lịch sử công việc của họ với <a href="Business_Class.html "> Hạng Business.</a></p>
-									<button type="button " class="btn btn-default btn-add-email-card">Hãy làm điều này!</button>
-                                <hr>
+                                <div>
+                                    <button type="button" class="btn btn-default btn-add-email-card" id="adduser"><span class="glyphicon glyphicon-user "></span>&nbsp;Thêm vào theo tên hoặc Email</button> 
+                                    <div id="divContentAddUser" style="display:none;">
+                                        <div class="form-group">
+										  <input type="text" class="form-control" id="usr">
+										</div>
+										<p>Tìm kiếm một người trên Trello bằng tên hoặc địa chỉ email, hoặc nhập địa chỉ email để mời một người mới.</p>
+                                    </div>
+                                </div>
+                                <div>
+                                    <button type="button " id="add_user_list" class="btn btn-default " style="margin-top: 20px;background-color: #D6DADC "><span class="glyphicon glyphicon-user "></span>&nbsp;Thêm vào hàng loạt các thành viên</button>
+                                	<div id="divContentAddUserList" style="display:none;">
+                                        <div class="form-group">
+										  <label for="usr">Các Email hoặc tên người dùng</label>
+										  <textarea class="form-control" rows="5" id="comment"></textarea>
+										</div>
+										<button class="btn btn-success">Thêm vào nhóm</button>
+                                    </div>
+                                </div>
+                                <div style="background-color: #D6DADC; margin-top: 30px;text-align: center; ">
+                                    <button type="button " class="close " data-dismiss="modal " aria-hidden="true ">×</button>
+                                    <img src="image/card/lock.svg " alt=" " style="margin-top: 30px; ">
+                                    <p id="setting-lock "><strong>Cần thêm an ninh để kiểm soát?</strong>
+                                    </p>
+                                    <p id="setting-lock-item ">Hủy kích hoạt các thành viên cũ của nhóm và bảo vệ lịch sử công việc của họ với <a href="Business_Class.html "> Hạng Business.</a>
+                                    </p>
+                                    <button type="button " class="btn btn-default btn-add-email-card">Hãy làm điều này!</button>
+                                    <hr>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-md-9">
-                        <div class="member-team" style="height: 50px;">
-                            <div class="row">
-                                <div class="col-md-2">
-                                    <div class="row">
-                                        <div class="col-md-4">
-                                            <div class=" member-circle">
-                                                <p>T</p>
+                        <div class="col-md-9">
+                            <div class="member-team" style="height: 50px;">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class=" member-circle">
+                                                    <p>T</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <p id="card-user-txt">thanhquang</p>
+                                                <p id="card-user-txt-name">@thanhquang123</p>
                                             </div>
                                         </div>
-                                        <div class="col-md-8">
-                                            <p id="card-user-txt">thanhquang</p>
-                                            <p id="card-user-txt-name">@thanhquang123</p>
+                                    </div>
+                                    <div class="col-md-4" style="margin-left: 300px; margin-top: 23px;">
+                                        <div style="float: right">
+                                            <button type="button" class="btn btn-member" disabled="true" style="float:right"><span class="glyphicon glyphicon-remove"></span>&nbsp; Rời đi</button>
+                                        </div>
+                                        <div>
+                                            <button type="button" class="btn btn-member" id="btn-sss">&nbsp;Quản trị viên <span class="glyphicon glyphicon-collapse-down"></span>
+                                            </button>
+                                            <div id="divContentHTMLsss" style="display:none;">
+                                                <button class="btn-admin">
+                                                    <span><strong>Quản trị viên</strong></span>
+                                                    <br><span>Có thể xem, tạo mới và chỉnh sửa các bảng của nhóm; có thể thay đổi thiết lập nhóm</span>
+                                                </button>
+                                                <button type="button" class="btn-admin" disabled="true" style="float:right"><span><strong>Bình thường</strong></span>
+                                                    <br>Có thể xem, tạo mới và chỉnh sửa các bảng của nhóm nhưng không thể thay đổi thiết lập nhóm.</button>
+                                                <hr style="margin-top: 30px;">
+                                                <p style="font-size:14px;">Bạn không thể thay đổi quyền này vì phải có ít nhất một người là quản trị</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4" style="margin-left: 390px; margin-top: 23px;">
-                                    <button type="button" class="btn btn-member">&nbsp;Quản trị viên <span class="glyphicon glyphicon-collapse-down"></span>
-                                    </button>
-                                    <button type="button" class="btn btn-member" disabled="true"><span class="glyphicon glyphicon-remove"></span>&nbsp; Rời đi</button>
-                                </div>
                             </div>
+                            <hr>
                         </div>
-                        <hr>
                     </div>
                 </div>
-            </div>
-            <div class="tab-pane" id="3">
-                <p id="title-card"> Quyền xem nhóm</p>
-                <hr>
-                <div>
-                    <div class="row">
-                        <div class="col-md-10">
-                            <p id="setting-card"><span class="glyphicon glyphicon-lock"></span>&nbsp;<strong>Bí mật</strong> - Đây là nhóm riêng tư. Chỉ những người trong nhóm có thể truy cập hoặc nhìn thấy nhóm</p>
-                        </div>
-                        <div class="col-md-2">
-                            <button class="btn btn default" type="button">Thay đổi</button>
-                        </div>
-                    </div><br>
-                    <p id="title-card">Liên kết nhóm Stack</p>
+                <div class="tab-pane" id="3">
+                    <p id="title-card"> Quyền xem nhóm</p>
                     <hr>
-                    <div class="row">
-                        <div class="col-md-10">
-                            <p id="setting-card">Liên kết các nhóm Slack và Trello với nhau để cộng tác trong các dự án Trello từ Slack. <a href="#">Tìm hiểu thêm.</a>
-                            </p>
-                        </div>
-                        <div class="col-md-2">
-                            <button class="btn btn default" type="button">Add to slack</button>
-                        </div>
-                    </div>
-                    <hr>
-                    <div style="background-color: #EDEFF4;">
-                        <br>
-                        <div style="text-align: center;">
-                            <img src="image/card/business-class-logo-blue.svg" alt="">
-                            <p style="margin-left: 100px;margin-right: 100px;margin-top: 20px;font-size: 18px;">Nâng cấp lên Trello Business Class để mở khóa những thiết lập này. Business Class thậm chí còn cho phép kiểm soát nhiều hơn về chế độ riêng tư và bảo mật, với các tùy chọn tích hợp mạnh mẽ, và còn hơn thế rất nhiều</p>
-                            <button class="btn btn-default btn-add-email-card" type="button"><strong>Nâng cấp nhóm của tôi</strong>
-                            </button>
-                        </div>
-                        <p id="title-card" style="margin-left: 20px;">Chính Sách Hạn Chế Tư Cách Thành Viên</p>
-                        <hr id="b">
-                        <div class="row" style="margin-left: 10px">
+                    <div>
+                        <div class="row">
                             <div class="col-md-10">
-                                <p id="setting-card-item">Có thể thêm tài khoản sử dụng bất kỳ tên miền email nào vào nhóm này.</p>
+                                <p id="setting-card"><span class="glyphicon glyphicon-lock"></span>&nbsp;<strong>Bí mật</strong> - Đây là nhóm riêng tư. Chỉ những người trong nhóm có thể truy cập hoặc nhìn thấy nhóm</p>
                             </div>
                             <div class="col-md-2">
-                                <button class="btn btn default" disabled="true" type="button">Thay đổi</button>
+                            	<div>
+                            		<button class="btn btn default" type="button" id="change-access">Thay đổi</button>
+                                     <div id="divContentAccess" style="display:none;">
+                                         <button class="btn-admin">
+                                             <span class="fa fa-lock">&nbsp;<strong>Riêng tư</strong></span>
+                                             <br><span>Đây là nhóm riêng tư. Chỉ những người trong nhóm có thể truy cập hoặc nhìn thấy nhóm.</span>
+                                         </button>
+                                         <button type="button" class="btn-admin" disabled="true" style="float:right"><span class="fa fa-globe">&nbsp;<strong>Công khai</strong></span>
+                                             <br>Đây là nhóm công khai. Bất kỳ ai có đường dẫn tới nhóm đều có thể nhìn thấy nhóm và nhóm có thể được tìm thấy trên các công cụ tìm kiếm như Google. Chỉ những người được mời vào nhóm có thể chỉnh sửa các bảng của nhóm.</button>
+                                         
+                                     </div>
+                                </div>
+                               
                             </div>
                         </div>
-                        <p id="title-card" style="margin-left: 20px;">Chính sách hạn chế tạo bảng</p>
+                        <br>
+                        <p id="title-card">Liên kết nhóm Stack</p>
                         <hr>
-                        <div class="row" style="margin-left: 10px">
+                        <div class="row">
                             <div class="col-md-10">
-                                <p id="setting-card-item"><strong>Mọi thành viên nhóm</strong> được tạo bảng <strong>công khai.</strong>
-                                    <br><strong>Mọi thành viên nhóm</strong> có thể tạo bảng <strong>hiện với nhóm.</strong>
-                                    <br>
-                                    <strong>Thành viên nhóm</strong> có thể tạo bảng <strong>bí mật.</strong>
+                                <p id="setting-card">Liên kết các nhóm Slack và Trello với nhau để cộng tác trong các dự án Trello từ Slack. <a href="#">Tìm hiểu thêm.</a>
                                 </p>
                             </div>
                             <div class="col-md-2">
-                                <button class="btn btn default" disabled="true" type="button">Thay đổi</button>
+                                <button class="btn btn default" type="button">Add to slack</button>
                             </div>
-                        </div>
-                        <p id="title-card" style="margin-left: 20px;">Mời thành viên Không thuộc nhóm vào bảng</p>
-                        <hr >
-                        <div class="row" style="margin-left: 10px">
-                            <div class="col-md-10">
-                                <p id="setting-card-item">Có thể thêm <strong>bất kỳ tài khoản</strong> nào vào các bảng trong nhóm này.</p>
-                            </div>
-                            <div class="col-md-2">
-                                <button class="btn btn default" disabled="true" type="button">Thay đổi</button>
-                            </div>
-                        </div>
-                        <h4 style="margin-left: 20px;"><strong>Các Hạn Chế Nhóm Slack</strong></h4>
-                        <hr id="b">
-                        <div class="row" style="margin-left: 10px">
-                            <div class="col-md-10">
-                                <p id="setting-card-item"><strong>Bất Kỳ Thành Viên Nào Trong Nhóm </strong>đều có thể liên kết và bỏ liên kết nhóm Trello này với các nhóm Slack.</p>
-                            </div>
-                            <div class="col-md-2">
-                                <button class="btn btn default" disabled="true" type="button">Thay đổi</button>
-                            </div>
-                        </div>
-                    </div>
-                    <br>
-                    <a href="#" class="big-mail-card">Bạn muốn xóa nhóm này</a>
-                </div>
-            </div>
-            <div class="tab-pane" id="4">
-                <div style="text-align: center; margin-top: 40px;"> 
-                    <p id="title-card">Nhận thêm tính năng thú vị và hấp dẫn.</p>
-                    <h7>Trello Gold bao gồm tất cả các tính năng phổ thông của Trello cộng thêm...</h7>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <img id="img-business-2" src="image/businsess/feature-integration.jpg" alt="">
-                            <div class="txt-business-4">
-                                <p id="title-card">Mở rộng hiệu suất của bạn</p>
-                                <h7>Tăng cường các bảng của bạn bằng các tính năng và tích hợp bổ sung. Bật lên đến ba Phần mở rộng ở mỗi bảng.</h7>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <img id="img-business-2" src="image/businsess/feature-roadmap.jpg" alt="">
-                            <div class="txt-card">
-                                <p id="title-card">Các tập đính kèm khổng lồ</p>
-                                <h7>Đính kèm tập 10 MB không đủ lớn? Tải lên tập tin lên đến 250 MB.</h7>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <img id="img-business-2" src="image/businsess/feature-overview.jpg" alt="">
-                            <div class="txt-business-4">
-                                <p id="title-card">Trello theo cách của bạn</p>
-                                <h7>Tạo các bảng theo cách bạn thích với hình nền tuỳ chọn, nhãn dán vui nhộn, và những biểu tượng cảm xúc tuỳ chỉnh.</h7>
-                            </div>
-                        </div>
-                        <div>
-                            <a href="trello-gold.html" id="link-trello-gold">Xem toàn bộ các lợi ích.</a>
                         </div>
                         <hr>
+                        <div style="background-color: #EDEFF4;">
+                            <br>
+                            <div style="text-align: center;">
+                                <img src="image/card/business-class-logo-blue.svg" alt="">
+                                <p style="margin-left: 100px;margin-right: 100px;margin-top: 20px;font-size: 18px;">Nâng cấp lên Trello Business Class để mở khóa những thiết lập này. Business Class thậm chí còn cho phép kiểm soát nhiều hơn về chế độ riêng tư và bảo mật, với các tùy chọn tích hợp mạnh mẽ, và còn hơn thế rất nhiều</p>
+                                <button class="btn btn-default btn-add-email-card" type="button"><strong>Nâng cấp nhóm của tôi</strong>
+                                </button>
+                            </div>
+                            <p id="title-card" style="margin-left: 20px;">Chính Sách Hạn Chế Tư Cách Thành Viên</p>
+                            <hr id="b">
+                            <div class="row" style="margin-left: 10px">
+                                <div class="col-md-10">
+                                    <p id="setting-card-item">Có thể thêm tài khoản sử dụng bất kỳ tên miền email nào vào nhóm này.</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <button class="btn btn default" disabled="true" type="button">Thay đổi</button>
+                                </div>
+                            </div>
+                            <p id="title-card" style="margin-left: 20px;">Chính sách hạn chế tạo bảng</p>
+                            <hr>
+                            <div class="row" style="margin-left: 10px">
+                                <div class="col-md-10">
+                                    <p id="setting-card-item"><strong>Mọi thành viên nhóm</strong> được tạo bảng <strong>công khai.</strong>
+                                        <br><strong>Mọi thành viên nhóm</strong> có thể tạo bảng <strong>hiện với nhóm.</strong>
+                                        <br>
+                                        <strong>Thành viên nhóm</strong> có thể tạo bảng <strong>bí mật.</strong>
+                                    </p>
+                                </div>
+                                <div class="col-md-2">
+                                    <button class="btn btn default" disabled="true" type="button">Thay đổi</button>
+                                </div>
+                            </div>
+                            <p id="title-card" style="margin-left: 20px;">Mời thành viên Không thuộc nhóm vào bảng</p>
+                            <hr>
+                            <div class="row" style="margin-left: 10px">
+                                <div class="col-md-10">
+                                    <p id="setting-card-item">Có thể thêm <strong>bất kỳ tài khoản</strong> nào vào các bảng trong nhóm này.</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <button class="btn btn default" disabled="true" type="button">Thay đổi</button>
+                                </div>
+                            </div>
+                            <h4 style="margin-left: 20px;"><strong>Các Hạn Chế Nhóm Slack</strong></h4>
+                            <hr id="b">
+                            <div class="row" style="margin-left: 10px">
+                                <div class="col-md-10">
+                                    <p id="setting-card-item"><strong>Bất Kỳ Thành Viên Nào Trong Nhóm </strong>đều có thể liên kết và bỏ liên kết nhóm Trello này với các nhóm Slack.</p>
+                                </div>
+                                <div class="col-md-2">
+                                    <button class="btn btn default" disabled="true" type="button">Thay đổi</button>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <a href="#" class="big-mail-card">Bạn muốn xóa nhóm này</a>
+                    </div>
+                </div>
+                <div class="tab-pane" id="4">
+                    <div style="text-align: center; margin-top: 40px;">
+                        <p id="title-card">Nhận thêm tính năng thú vị và hấp dẫn.</p>
+                        <h7>Trello Gold bao gồm tất cả các tính năng phổ thông của Trello cộng thêm...</h7>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img id="img-business-2" src="image/businsess/feature-integration.jpg" alt="">
+                                <div class="txt-business-4">
+                                    <p id="title-card">Mở rộng hiệu suất của bạn</p>
+                                    <h7>Tăng cường các bảng của bạn bằng các tính năng và tích hợp bổ sung. Bật lên đến ba Phần mở rộng ở mỗi bảng.</h7>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <img id="img-business-2" src="image/businsess/feature-roadmap.jpg" alt="">
+                                <div class="txt-card">
+                                    <p id="title-card">Các tập đính kèm khổng lồ</p>
+                                    <h7>Đính kèm tập 10 MB không đủ lớn? Tải lên tập tin lên đến 250 MB.</h7>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <img id="img-business-2" src="image/businsess/feature-overview.jpg" alt="">
+                                <div class="txt-business-4">
+                                    <p id="title-card">Trello theo cách của bạn</p>
+                                    <h7>Tạo các bảng theo cách bạn thích với hình nền tuỳ chọn, nhãn dán vui nhộn, và những biểu tượng cảm xúc tuỳ chỉnh.</h7>
+                                </div>
+                            </div>
+                            <div>
+                                <a href="trello-gold.html" id="link-trello-gold">Xem toàn bộ các lợi ích.</a>
+                            </div>
+                            <hr>
+                        </div>
                     </div>
                 </div>
             </div>
-          </div>
-      </div>
-  </div>
+        </div>
+    </div>
+    <jsp:include page="footer.jsp"></jsp:include>
 </body>
 
 </html>

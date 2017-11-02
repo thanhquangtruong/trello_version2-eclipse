@@ -13,22 +13,48 @@
     <link rel="stylesheet" href="css/header.css"/>
     <link rel="stylesheet" href="css/footer.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<script>
+        function showResume() {
+          document.getElementById("ChangeResume").style.display = "block";
+        }
+    </script>
+    
 </head>
 
 <body>
      <jsp:include page="header_user.jsp"></jsp:include>
-    <div class="body-card" style="height: 200px; background-color: #EDEFF0;"><br>
+    <div class="body-card" style="height: auto; background-color: #EDEFF0;"><br>
         <div class="container">
             <div class="row">    
-                <div class="col-md-4">
+                <div class="col-md-4" style="padding-bottom:50px;">
                     <div class="circle-resume">
                         <p>T</p>
                     </div>
                 </div> 
                 <div class="col-md-8">
                     <label style=" margin-left: 40px;margin-top: 40px;" id="show-name">Thanhquang10</label><span>@thanhquang101</span><br>
-                    <button type="button" class="btn" style="margin-top: 10px; margin-left: 40px; font-size: 18px;"><span class="glyphicon-pencil">Chỉnh sửa lý lịch</span></button>
+                    <button type="button" class="btn" style="margin-top: 10px; margin-left: 40px; font-size: 18px;" onclick="showResume();"><span class="glyphicon-pencil">Chỉnh sửa lý lịch</span></button>
+                	<div style="display:none;width: 300px;" id="ChangeResume" class="animate-bottom">
+                	<br>
+                         <div class="form-group" ">
+                              <label id="addemail">Tên đầy đủ</label>
+                              <input name="name" type ="text" class="form-control" value="thanhquangtruong" style="background-color: #D6DADC">
+                          </div>
+                          <div class="form-group">
+                              <label id="addemail">Tên người dùng</label>
+                              <input name="name" type ="text" class="form-control" value="thanhquangtruong101" style="background-color: #D6DADC">
+                          </div>
+                          <div class="form-group">
+                              <label id="addemail">Chữ cái viết tắt</label>
+                              <input name="name" type ="text" class="form-control" value="T"style="background-color: #D6DADC">
+                          </div>
+                          <div class="form-group">
+                              <label id="addemail">Lý lịch (không bắt buộc)</label>
+                              <textarea class="form-control" rows="3" id="resume" style="background-color: #D6DADC"></textarea>
+                          </div>
+                          <button class="btn btn-primary" type="button" style="margin-bottom:20px">Thay đổi</button>
+                          <button class="btn btn-warning" type="button" style="margin-bottom:20px; margin-left:10px;">Hủy</button><br>
+                     </div>
                 </div>
             </div> 
         </div> 

@@ -14,7 +14,7 @@
       <script type="text/javascript">
          <!--
             function service() {
-               window.location="tour.html";
+               window.location="tour.jsp";
             }
          //-->
       </script>

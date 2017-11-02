@@ -171,7 +171,59 @@
         html: true,
       });
     });
-
-  function Redirect() {
-               window.location="index.html";
-            }
+// Quan tri vien
+  $(function () {
+      //popover normal
+      $('.btn-open-popover').popover();
+      //popover option
+      $("#btn-sss").popover({
+        title: 'Thay đổi quyền',
+        content: $('#divContentHTMLsss').html(),
+        placement: 'bottom',
+        html: true,
+      });
+    });
+  $(function () {
+      //popover normal
+      $('.btn-open-popover').popover();
+      //popover option
+      $("#change-access").popover({
+        title: 'Thay đổi quyền riêng tư',
+        content: $('#divContentAccess').html(),
+        placement: 'bottom',
+        html: true,
+      });
+    });
+  $(function () {
+      //popover normal
+      $('.btn-open-popover').popover();
+      //popover option
+      $("#adduser").popover({
+        title: 'Thành viên',
+        content: $('#divContentAddUser').html(),
+        placement: 'bottom',
+        html: true,
+      });
+    });
+  $(function () {
+      //popover normal
+      $('.btn-open-popover').popover();
+      //popover option
+      $("#add_user_list").popover({
+        title: 'Thành viên',
+        content: $('#divContentAddUserList').html(),
+        placement: 'bottom',
+        html: true,
+      });
+    });
+  $(function () {
+      //popover normal
+      $('.btn-open-popover').popover();
+      //popover option
+      $("#created_tables").popover({
+        title: 'Thành viên',
+        content: $('#divContentAddTable').html(),
+        placement: 'bottom',
+        html: true,
+      });
+    });

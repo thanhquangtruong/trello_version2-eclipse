@@ -1164,4 +1164,13 @@ img#img-app{
     background-color: #DDEBFB;
     height: 45px;
     font-size: 20px;
-}s
+}
+.btn-admin{
+	text-align: left;
+	background-color: white;
+	border: white;
+	font-size: 12px;
+}
+.btn-admin:hover{
+	background-color: #D6DADC;
+}
